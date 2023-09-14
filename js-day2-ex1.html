@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-1</title>
+</head>
+<body>
+    <!-- <div id="d1" style="width: 100px;margin: 1px; background-color: blue;">&nbsp;</div>
+    <div id="d2" style="width: 100px;margin: 1px; background-color: blue;">&nbsp;</div>
+    <div id="d3" style="width: 100px;margin: 1px; background-color: blue;">&nbsp;</div> -->
+
+    <div id="d1" style="width: 100px;margin: 1px;">&nbsp;</div>
+    <div id="d2" style="width: 100px;margin: 1px;">&nbsp;</div>
+    <div id="d3" style="width: 100px;margin: 1px;">&nbsp;</div>
+
+    <button onclick="changeColors()">Change colors</button>
+
+    <a href="index.html">Go back</a>
+
+    <script>
+        const divs = document.querySelectorAll("div")
+
+        for(let i = 0; i < divs.length; i++) {
+            divs[i].style.backgroundColor = 'blue'; 
+        }
+
+        function changeColors() {
+            document.querySelector("#d1").style.backgroundColor = "yellow";
+            document.querySelector("#d2").style.backgroundColor = "red";
+            document.querySelector("#d3").style.backgroundColor = "green";
+        }
+
+
+    </script>
+
+</body>
+</html>
