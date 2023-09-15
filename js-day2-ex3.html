@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Exercise-3</title>
+<body>
+
+    <h1>Exercise-2</h1>
+    
+<div class="container" style="padding:1em;font-family: sans-serif">
+
+    <button id="initialize-btn">Load Data</button>
+    <ul id="ul1"></ul>
+
+    <form>
+        <div><input id="name-input" placeholder="Enter new name here"></div>
+        <div><span style="display: inline-block; width: 20em;margin-top: 10px;">Manipulate the individual DOM elements </span>
+            <button id="btn-a1">Add Name</button>
+            <button id="btn-a2">Remove First</button>
+            <button id="btn-a3">Remove Last</button>
+        </div>
+        <div style="margin-top: 1em;"><span style="display: inline-block; width: 20em;">Manipulate the Array and re-render the UL</span>
+            <button id="btn-b1">Add Name</button>
+            <button id="btn-b2">Remove First</button>
+            <button id="btn-b3">Remove Last</button>
+        </div>
+    </form>
+
+    <a href="index.html">Go back</a>
+</div>
+
+<section id="reflections">
+    <h1>Reflections on exercise-3</h1>
+        <p>
+            This Exercise is about using the <strong>map</strong> function to create a list from an arraylist in Javascript, and then convert over
+            to pure html, and also how we control the content of the list. Also on how keep the site from reloading everytime we try to submit
+            something.
+        </p>
+
+            <p>We have specifically used the <strong>.preventDefault()</strong> in this exercise to prevent to site from reloading everytime we either
+            submit a name in input-tag, try to delete a name from first place or try to delete a name from the last place. In the form-tag of our
+            HTML-file, our buttons does not have any "type" specifically set to any of those button-tag, so everytime we try to submit with the '
+            buttons, the site would keep reloading, and not take any of the data we are giving it.</p>
+</section>
+
+<script src="scripts/ex3.js"></script>
+
+</body>
+</html>

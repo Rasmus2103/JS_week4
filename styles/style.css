@@ -1,0 +1,28 @@
+body {
+    font-family: sans-serif;
+}
+
+#reflections{
+    width:800px;
+    font-family: sans-serif;
+    background-color: lightblue;
+    border-radius: 8px;
+    padding:10px;
+    margin-top:20px;
+}
+
+#reflections h1, p {
+    margin:20px;
+}
+
+#reflections p {
+    line-height: 1.5;
+}
+
+/*Style for Exercise 2*/
+.my-div {
+    width: 25px; 
+    height: 25px;
+    background-color:red; 
+    margin:1px;
+}

@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Exercise-1</title>
 </head>
 <body>
-    <!-- <div id="d1" style="width: 100px;margin: 1px; background-color: blue;">&nbsp;</div>
-    <div id="d2" style="width: 100px;margin: 1px; background-color: blue;">&nbsp;</div>
-    <div id="d3" style="width: 100px;margin: 1px; background-color: blue;">&nbsp;</div> -->
+
+    <h1>Exercise-1</h1>
 
     <div id="d1" style="width: 100px;margin: 1px;">&nbsp;</div>
     <div id="d2" style="width: 100px;margin: 1px;">&nbsp;</div>
@@ -18,21 +18,18 @@
 
     <a href="index.html">Go back</a>
 
-    <script>
-        const divs = document.querySelectorAll("div")
+    <section id="reflections">
+        <h1>Reflections on Exercise-1</h1>
+            <p> 
+                What have I done in this exercise is to add a button with onclick function in HTML-file, and then given the function I have created in my 
+                script to change colors everytime we click on the button. I also did a background-color directly into the HTML document, but instead used
+                the for-loop to select all of the div-tag element to change it to the color blue. We could just have added the background-color to a 
+                seperate style tag or CSS file. The onclick on HTML button tag combined with function made it also very easy. Of course we could also have
+                added an addEventListener in my script to make it change color. 
+            </p>
+    </section>
 
-        for(let i = 0; i < divs.length; i++) {
-            divs[i].style.backgroundColor = 'blue'; 
-        }
-
-        function changeColors() {
-            document.querySelector("#d1").style.backgroundColor = "yellow";
-            document.querySelector("#d2").style.backgroundColor = "red";
-            document.querySelector("#d3").style.backgroundColor = "green";
-        }
-
-
-    </script>
+    <script src="scripts/ex1.js"></script>
 
 </body>
 </html>

@@ -3,9 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Exercise-2</title>
 </head>
 <body>
-    
+
+    <h1>Exercise-2</h1>
+
+<div id="outer">
+    <div id="div1" class="my-div"></div>
+    <div id="div2" class="my-div"></div>
+    <div id="div3" class="my-div"></div>
+    <div id="div4" class="my-div"></div>
+    <div id="div5" class="my-div"></div>
+    <div id="div6" class="my-div"></div>
+    <div id="div7" class="my-div"></div>
+    <div id="div8" class="my-div"></div>
+    <div id="div9" class="my-div"></div>
+    <div id="div10" class="my-div"></div>
+</div>
+
+    <p id="output"></p>
+
+    <a href="index.html">Go back</a>
+
+    <section id="reflections">
+        <h1>Reflections on Exercise-2</h1>
+        <p>
+            In this Exercise is the about the concept event bubling. The concept is about when a event acours in a element inside of another element
+            and both elements have registered a handler for that event. 
+            </p>
+            
+            <p>The element we have here is the red boxes, that are all 
+            <strong>div-tags</strong> and have unique id's and outside of those tags we have another div-tag with a unique id called <strong>outer</strong>. 
+            In the script we create an <strong>addEventListener</strong> with <strong>outer</strong>, and inside of that id, we create an event 
+            that say print a text of the id of every red-box with the help of a paragraph tag, and in the addEventListener we have told it to 
+            target the id of everything that is inside of the <strong>outer div-tag</strong>, and that is the red-boxes, and everytime we click
+            on one of the red boxes it print out the id of every div-tag.</p>
+            
+            <p>In this case we have created a event bubling, because both of <strong>outer div-tag</strong> and the div-tags for the red-boxes have 
+            an event connected to it, and everytime we click on anything we get one of the id printed out.   
+       </p>
+    </section>
+
+      <script src="scripts/ex2.js"></script>
+     
 </body>
 </html>
