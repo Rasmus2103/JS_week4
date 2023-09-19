@@ -1,4 +1,4 @@
-const cars = ["Ford", "VW", "Toyota", "Volvo"]; // Assume this was fetched from the backend
+const cars = ["Ford", "VW", "Toyota", "Volvo"];
 
 const carSelector = document.getElementById('car-selector');
 
