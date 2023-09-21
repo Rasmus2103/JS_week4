@@ -38,8 +38,6 @@ function displayCountryInfo(country) {
     }
 }
 
-
-
 document.querySelectorAll('path').forEach(country => {
     country.style.fill = "#cccccc"; 
 });

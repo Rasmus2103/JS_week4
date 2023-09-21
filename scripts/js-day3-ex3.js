@@ -88,7 +88,6 @@ function updateCar(event) {
         .then(carResponse => {
             document.getElementById("new-editResponse").innerText = JSON.stringify(carResponse, null, 3)
         })
-
         console.log(updatedCar);
 }
 

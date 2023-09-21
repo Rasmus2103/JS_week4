@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Fetch API Example</title>
 </head>
 <body>
@@ -23,7 +23,7 @@
             text-align: left;
         }
     </style>
-
+<a href="index.html">Go back</a>
 <button id="fetchButton">Fetch Users</button>
 <table id="usersTable">
     <thead>
@@ -36,6 +36,33 @@
         
     </tbody>
 </table>
+
+<div id="reflections">
+    <h1>Reflections on Exercise-1</h1>
+
+    <h2>What is a Promise?</h2>
+    <p>A promise is a Javascript object that represent a completion of an asynchronous operation and its resulting value.</p>
+
+    <h2>What does the fetch method return</h2>
+    <p>The fetch method returns a Promise that contains the completed response to the request. However it does not contain the actual body of the of the response. 
+        We can use methods like .json() to get body of that specific response we wish to pick up. In this Exercise we are using it the get the body of the users from of specific api.  
+    </p>
+
+    <h2>Why do we need to have two .then callbacks with our fetch code?</h2>
+    <p>We have 2 .then callback because there are necessarys steps to complete our fetch request</p>
+    <p>The first step is that we need the actual network request itself, needs to be resolved into a Response object.</p>
+    <p>The second step is processing the body of the response, and we can do that ny reading it as JSON.</p>
+
+    <h2>What can and should you do in the first?</h2>
+    <p>The thing we can and should do first is to check if request was successfull. We can do by either using the <strong>ok</strong> property, or as its more commonly used, we can read with
+        JSON and the content from api will be showed as JSON objects.
+    </p>
+
+    <h2>What can and should you do in the last?</h2>
+    <p>The thing we can and should do last, is to handle the data the are send to us from the api. If the request was successfull, we can begin with how we wish to handle our parsed
+        data, in this case JSON data. In this Exercise, we have in our second <strong>.then</strong> callback parsed the data, and then convert it into HTML objects. 
+    </p>
+</div>
 
 <script src="scripts/fecth.js"></script>
 </body>
